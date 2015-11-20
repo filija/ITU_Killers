@@ -1,0 +1,578 @@
+
+
+body{
+
+	
+    margin: 0;
+    
+    background-attachment: fixed;
+	background: -webkit-linear-gradient(#00A3D5,#ffffff);
+	background: -moz-linear-gradient(#00A3D5, #ffffff);
+	background: -o-linear-gradient(#00A3D5, #ffffff);
+	background: -ms-linear-gradient(#00A3D5, #ffffff);
+	background: linear-gradient(#00A3D5, #ffffff);
+	background-repeat: no-repeat;
+
+}
+
+
+#header{
+	width: 100%;
+	height: 130px;
+
+
+}
+ 
+
+#menu{
+	width: 100%;
+	height: 50px;
+	background-color: #ffffff;
+	font-size: 18px;
+	padding-top: 3px;
+	text-align: center;
+
+}
+
+h1{
+	color:white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 40px;
+	padding-top: 45px;
+	font-family: 'Orbitron', sans-serif;
+	
+}
+
+
+.fancyNav{
+	overflow: hidden;
+	display: inline-block;
+	margin:auto;
+
+}
+
+.fancyNav li{
+	
+	background-color: #ffffff;
+	position:relative;
+	float: left;
+	list-style: none;
+}
+
+.fancyNav li:after{
+	
+	content:'.';
+	text-indent:-9999px;
+	overflow:hidden;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:1;
+	opacity:0;
+	background-color: #F0F0F0;
+	-moz-transition:0.25s all;
+	-webkit-transition:0.25s all;
+	-o-transition:0.25s all;
+	transition:0.25s all;
+
+}
+
+
+.fancyNav li:hover:after,
+.fancyNav li.selected:after,
+.fancyNav li:target:after{
+	opacity:1;
+
+}
+
+.fancyNav:hover li.selected:after,
+.fancyNav:hover li:target:after{
+
+	opacity:0;
+}
+
+.fancyNav li.selected:hover:after,
+.fancyNav li:target:hover:after{
+	opacity:1 !important;
+}
+
+.fancyNav li a{
+	color: #5d5d5d;
+	display: inline-block;
+	font: 20px/1 Orbitron, sans-serif;
+	padding: 12px 35px 14px;
+	position: relative;
+	z-index:2;
+	text-decoration:none !important;
+	white-space:nowrap;
+
+}
+
+
+#pageField{
+
+	width: 1000px;	
+	margin: auto;
+	
+}
+
+
+
+#textField{
+
+	background-color: #ffffff;
+	width: 550px;
+	box-shadow: 7px 7px 8px #888888;
+	margin-top: 90px;
+	float:left;
+	margin-bottom: 50px;
+
+}
+
+
+#textField_users{
+
+	background-color: #ffffff;
+	width: auto;
+	padding: 10px;	
+	box-shadow: 7px 7px 8px #888888;
+	margin-top: 90px;
+	float: left;
+	margin-left: -170px;
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
+#loginform{
+	width: 366px;
+	background-color: white;
+	box-shadow: 7px 7px 8px #888888;
+	float:right;
+	margin-top: 90px;
+	
+	
+}
+
+
+#reg_form{
+	width: 450px;	
+	background-color: #ffffff;
+	box-shadow: 7px 7px 8px #888888;
+	margin: auto;
+	margin-top: 90px;
+	margin-bottom: 50px;
+
+
+}
+
+#windov{
+	max-width: 450px;	
+
+}	
+
+h2 {
+text-align:center;
+padding:2px;
+color:#00A3D5;
+
+}
+
+
+#login {
+width:100%;
+float:left;
+font-family: 'Orbitron', sans-serif;
+background-color: #F0F0F0;
+margin-bottom: 25px;
+
+}
+
+
+
+input[name=typ]{
+	margin-left: 50px;
+}
+
+
+
+#typLetenky{
+	
+	font-family: 'Titillium Web', sans-serif;
+	
+}
+
+h3{
+	font-size: 16px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: normal;
+}
+
+label{
+	font-size: 16px;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: normal;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+input[name=odlet]{
+width:40%;
+padding:10px;
+margin-top:8px;
+margin-left: 95px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:15px;
+font-family: 'Titillium Web', sans-serif;
+background-color: #F0F0F0;
+}
+
+input[name=prilet]{
+width:40%;
+padding:10px;
+margin-top:8px;
+margin-left: 87px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:15px;
+font-family: 'Titillium Web', sans-serif;
+background-color: #F0F0F0;
+}
+
+input[name=date]{
+width:16%;
+padding:8px;
+margin-top:8px;
+margin-left: 99px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:15px;
+font-family: 'Titillium Web', sans-serif;
+background-color: #F0F0F0;
+}
+
+input[name=date2]{
+width:16%;
+padding:8px;
+margin-top:8px;
+margin-left: -35px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:15px;
+font-family: 'Titillium Web', sans-serif;
+background-color: #F0F0F0;
+}
+
+
+
+label[for=tridas]{
+margin-right: 158px;
+}
+
+label[for=pomlcka]{
+	margin-left: 8px;
+	margin-right: 42px;
+}
+
+
+input[name=trida]{
+	margin-right: 9px;
+}
+
+
+input[name=hledej] {
+width:43%;
+background-color:#FFBC00;
+color:#fff;
+border:2px solid #FFCB00;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+margin-bottom:40px;
+margin-top: 8px;
+margin-left: 260px;
+font-family: 'Orbitron', sans-serif;
+}
+
+input[name=username],input[name=password] {
+width:75%;
+padding:10px;
+margin-top:8px;
+margin-left: 35px;
+border:1px solid #ccc;
+padding-left:5px;
+font-size:16px;
+font-family: 'Orbitron', sans-serif;
+background-color: #F0F0F0;
+}
+
+input[name=submit] {
+width:80%;
+background-color:#FFBC00;
+color:#fff;
+border:2px solid #FFCB00;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+margin-bottom:15px;
+margin-top: 8px;
+margin-left: 35px;
+font-family: 'Orbitron', sans-serif;
+}
+
+
+input[name=jmeno]{
+width:40%;
+border:1px solid #ccc;
+font-size:12px;
+font-family: 'Orbitron', sans-serif;
+background-color: #F0F0F0;
+padding:10px;
+float: left;
+margin-top: 8px;
+}
+
+
+input[name=prijmeni]{
+width:40%;
+border:1px solid #ccc;
+font-size:12px;
+font-family: 'Orbitron', sans-serif;
+background-color: #F0F0F0;
+padding:10px;
+margin-left: 10px;
+margin-top: 8px;
+}
+
+						
+
+input[name=add]{
+width:40%;
+border:1px solid #ccc;
+font-size:12px;
+font-family: 'Orbitron', sans-serif;
+background-color: #F0F0F0;
+padding:10px;
+float: left;
+margin-top: 8px;
+}
+
+input[name=mail]{
+width:87.6%;
+border:1px solid #ccc;
+font-size:12px;
+font-family: 'Orbitron', sans-serif;
+background-color: #F0F0F0;
+padding:10px;
+float: left;
+margin-top: 8px;
+}
+
+input[name=pass_reg]{
+width:40%;
+border:1px solid #ccc;
+font-size:12px;
+font-family: 'Orbitron', sans-serif;
+background-color: #F0F0F0;
+padding:10px;
+margin-top: 8px;
+
+}
+
+
+input[name=pass_reg2]{
+	width:40.2%;
+border:1px solid #ccc;
+font-size:12px;
+font-family: 'Orbitron', sans-serif;
+background-color: #F0F0F0;
+padding:10px;
+margin-left: 5px;
+}
+
+input[name=tel]{
+width:40%;
+border:1px solid #ccc;
+font-size:12px;
+font-family: 'Orbitron', sans-serif;
+background-color: #F0F0F0;
+padding:10px;
+margin-top: 8px;
+margin-left: 10px;	
+}
+
+
+input[name=submit_reg] {
+width:87%;
+background-color:#FFBC00;
+color:#fff;
+border:2px solid #FFCB00;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+margin-bottom:15px;
+margin-top: 8px;
+margin-left: 0px;
+font-family: 'Orbitron', sans-serif;
+}
+
+#jmeno_prij{
+	margin-left: 30px;;
+}
+
+#infopanel
+{
+	 color: #ffffff; 
+	 font-size: 15px; 
+	 float: right;
+	 margin-right: 20px;
+	 font-weight: bold;
+}
+
+
+#administrace {
+width:100%;
+float:left;
+font-family: 'Orbitron', sans-serif;
+background-color: #F0F0F0;
+margin-bottom: 25px;
+
+}
+
+table{
+	border-collapse: collapse;
+	margin: auto;
+	margin-bottom: 50px;
+	
+}
+
+table, td, th {
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+#tlacitko{
+	background-color: white;
+	width: 170px;
+	height: 50px;
+	float: left;
+	margin-top: 90px;
+	margin-left: 50px;
+}
+
+#admin_menu,a{
+	text-decoration:none !important;	
+
+}
+#admin_menu.hover,#admin_menu.active,#admin_menu.visited{
+	text-decoration:none;
+}
+
+#admin_menu,ul,li{
+	list-style-type: none;
+}
+
+input[name=reg_window]{
+
+background-color:#FFBC00;
+color:#fff;
+border:2px solid #FFCB00;
+padding:10px;
+font-size:16px;
+cursor:pointer;
+font-family: 'Titillium Web', sans-serif;
+margin-bottom: 4px;
+}
+input[name=reg_windows]{
+
+background-color:#FFBC00;
+color:#fff;
+border:2px solid #FFCB00;
+padding:10px;
+font-size:16px;
+cursor:pointer;
+font-family: 'Titillium Web', sans-serif;
+margin-bottom: 4px;
+}
+
+
+
+div#main {
+
+  		
+    background-size:cover;
+
+}
+div#main.blur {
+	
+
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+
+
+
+}
+
+
+div#show_div.hidden {
+	display: none;
+}
+
+div#show_div{
+	width: 500px;
+	height: 450px;
+	background-color: white;
+	position: absolute;
+	left: 440px;
+	top:240px;
+	z-index: 99;  
+	border: 2px solid #00A3D5;
+}
+
+
+.material-icons {
+	margin-left: 220px;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 54px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: grey;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+    transition-property:color,font-size;
+        transition-duration: 0.2s;
+}
+
+
+.material-icons:hover{
+	color: red;
+	font-size: 64px;
+}
